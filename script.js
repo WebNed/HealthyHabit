@@ -1,9 +1,3 @@
-const AddApplication = document.getElementById("AddButton");
-AddApplication.addEventListener("click", function() {
-  AddApplication.style.color = 'green';
-  AddApplication.style.textDecoration = 'underline';
-});
-
 const display1 = document.getElementById("display1");
 let timer1 = null;
 let starttime1 = 0;
@@ -27,7 +21,7 @@ function pause1() {
 }
 
 function reset1() {
- clearInterval(timer1);
+  clearInterval(timer1);
   starttime1 = 0;
   elapsedtime1 = 0;
   RunTime1 = false;
@@ -40,12 +34,12 @@ function update1() {
   let hours = Math.floor(elapsedtime1 / (1000 * 60 * 60));
   let minutes = Math.floor(elapsedtime1 / (1000 * 60) % 60);
   let seconds = Math.floor(elapsedtime1 / 1000 % 60);
-  let miliseconds = Math.floor(elapsedtime1 % 1000/10);
+  let miliseconds = Math.floor(elapsedtime1 % 1000 / 10);
 
-  hours = String(hours).padStart(2,"0");
+  hours = String(hours).padStart(2, "0");
   minutes = String(minutes).padStart(2, "0");
   seconds = String(seconds).padStart(2, "0");
-  miliseconds = String(miliseconds).padStart(2,"0");
+  miliseconds = String(miliseconds).padStart(2, "0");
   display1.textContent = `${hours}:${minutes}:${seconds}:${miliseconds}`
 }
 
@@ -73,7 +67,7 @@ function pause2() {
 }
 
 function reset2() {
- clearInterval(timer2);
+  clearInterval(timer2);
   starttime2 = 0;
   elapsedtime2 = 0;
   RunTime2 = false;
@@ -86,17 +80,17 @@ function update2() {
   let hours = Math.floor(elapsedtime2 / (1000 * 60 * 60));
   let minutes = Math.floor(elapsedtime2 / (1000 * 60) % 60);
   let seconds = Math.floor(elapsedtime2 / 1000 % 60);
-  let miliseconds = Math.floor(elapsedtime2 % 1000/10);
+  let miliseconds = Math.floor(elapsedtime2 % 1000 / 10);
 
-  hours = String(hours).padStart(2,"0");
+  hours = String(hours).padStart(2, "0");
   minutes = String(minutes).padStart(2, "0");
   seconds = String(seconds).padStart(2, "0");
-  miliseconds = String(miliseconds).padStart(2,"0");
+  miliseconds = String(miliseconds).padStart(2, "0");
   display2.textContent = `${hours}:${minutes}:${seconds}:${miliseconds}`
 }
 
 const display3 = document.getElementById("display3");
-let timer3= null;
+let timer3 = null;
 let starttime3 = 0;
 let elapsedtime3 = 0;
 let RunTime3 = false;
@@ -118,7 +112,7 @@ function pause3() {
 }
 
 function reset3() {
- clearInterval(timer3);
+  clearInterval(timer3);
   starttime3 = 0;
   elapsedtime3 = 0;
   RunTime3 = false;
@@ -131,12 +125,12 @@ function update3() {
   let hours = Math.floor(elapsedtime3 / (1000 * 60 * 60));
   let minutes = Math.floor(elapsedtime3 / (1000 * 60) % 60);
   let seconds = Math.floor(elapsedtime3 / 1000 % 60);
-  let miliseconds = Math.floor(elapsedtime3 % 1000/10);
+  let miliseconds = Math.floor(elapsedtime3 % 1000 / 10);
 
-  hours = String(hours).padStart(2,"0");
+  hours = String(hours).padStart(2, "0");
   minutes = String(minutes).padStart(2, "0");
   seconds = String(seconds).padStart(2, "0");
-  miliseconds = String(miliseconds).padStart(2,"0");
+  miliseconds = String(miliseconds).padStart(2, "0");
   display3.textContent = `${hours}:${minutes}:${seconds}:${miliseconds}`
 }
 
@@ -163,7 +157,7 @@ function pause4() {
 }
 
 function reset4() {
- clearInterval(timer4);
+  clearInterval(timer4);
   starttime4 = 0;
   elapsedtime4 = 0;
   RunTime4 = false;
@@ -176,12 +170,12 @@ function update4() {
   let hours = Math.floor(elapsedtime4 / (1000 * 60 * 60));
   let minutes = Math.floor(elapsedtime4 / (1000 * 60) % 60);
   let seconds = Math.floor(elapsedtime4 / 1000 % 60);
-  let miliseconds = Math.floor(elapsedtime4 % 1000/10);
+  let miliseconds = Math.floor(elapsedtime4 % 1000 / 10);
 
-  hours = String(hours).padStart(2,"0");
+  hours = String(hours).padStart(2, "0");
   minutes = String(minutes).padStart(2, "0");
   seconds = String(seconds).padStart(2, "0");
-  miliseconds = String(miliseconds).padStart(2,"0");
+  miliseconds = String(miliseconds).padStart(2, "0");
   display4.textContent = `${hours}:${minutes}:${seconds}:${miliseconds}`
 }
 
@@ -210,7 +204,7 @@ function pause5() {
 }
 
 function reset5() {
- clearInterval(timer5);
+  clearInterval(timer5);
   starttime5 = 0;
   elapsedtime5 = 0;
   RunTime5 = false;
@@ -223,12 +217,12 @@ function update5() {
   let hours = Math.floor(elapsedtime5 / (1000 * 60 * 60));
   let minutes = Math.floor(elapsedtime5 / (1000 * 60) % 60);
   let seconds = Math.floor(elapsedtime5 / 1000 % 60);
-  let miliseconds = Math.floor(elapsedtime5 % 1000/10);
+  let miliseconds = Math.floor(elapsedtime5 % 1000 / 10);
 
-  hours = String(hours).padStart(2,"0");
+  hours = String(hours).padStart(2, "0");
   minutes = String(minutes).padStart(2, "0");
   seconds = String(seconds).padStart(2, "0");
-  miliseconds = String(miliseconds).padStart(2,"0");
+  miliseconds = String(miliseconds).padStart(2, "0");
   display5.textContent = `${hours}:${minutes}:${seconds}:${miliseconds}`
 }
 
@@ -257,7 +251,7 @@ function pause6() {
 }
 
 function reset6() {
- clearInterval(timer6);
+  clearInterval(timer6);
   starttime6 = 0;
   elapsedtime6 = 0;
   RunTime6 = false;
@@ -270,11 +264,28 @@ function update6() {
   let hours = Math.floor(elapsedtime6 / (1000 * 60 * 60));
   let minutes = Math.floor(elapsedtime6 / (1000 * 60) % 60);
   let seconds = Math.floor(elapsedtime6 / 1000 % 60);
-  let miliseconds = Math.floor(elapsedtime6 % 1000/10);
+  let miliseconds = Math.floor(elapsedtime6 % 1000 / 10);
 
-  hours = String(hours).padStart(2,"0");
+  hours = String(hours).padStart(2, "0");
   minutes = String(minutes).padStart(2, "0");
   seconds = String(seconds).padStart(2, "0");
-  miliseconds = String(miliseconds).padStart(2,"0");
+  miliseconds = String(miliseconds).padStart(2, "0");
   display6.textContent = `${hours}:${minutes}:${seconds}:${miliseconds}`
 }
+
+
+document.getElementById("Save1").addEventListener
+
+const myDetails1 = { "AppDetails1": "Twitter", "TimeSpent1": 60, "ActionTaken1": "Started" };
+const myDetails2 = { "AppDetails2": "YouTube", "TimeSpent2": 180, "ActionTaken2": "Paused" };
+const myDetails3 = { "AppDetails3": "Facebook", "TimeSpent3": 30, "ActionTaken3": "Reset" }
+
+localStorage.setItem("myDetails1", JSON.stringify("myDetails1"));
+
+localStorage.setItem("myDetails2", JSON.stringify("myDetails2"));
+
+localStorage.setItem("myDetails3", JSON.stringify("myDetails3"));
+
+const StoredDetails1 = JSON.parse(localStorage.getItem("myDetails1"));
+const StoredDetails2 = JSON.parse(localStorage.getItem("myDetails2"));
+const StoredDetails3 = JSON.parse(localStorage.getItem("myDetails3"));
